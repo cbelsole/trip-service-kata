@@ -12,7 +12,7 @@ export default class TripService {
 
     if (loggedUser != null) {
       for (const friend of user.getFriends()) {
-        if (friend === loggedUser) {
+        if (friend.getName() === loggedUser.getName()) {
           isFriend = true;
           break;
         }

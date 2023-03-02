@@ -5,6 +5,11 @@ export default class User {
   private friends: User[] = [];
 
   constructor(private name: string) {}
+
+  public getName(): string {
+    return this.name;
+  }
+
   public getFriends(): User[] {
     return this.friends;
   }
